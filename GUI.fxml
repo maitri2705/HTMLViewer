@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="window" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="webviewer.Controller">
+    <bottom>
+        <HBox BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="status" />
+            </children>
+        </HBox>
+    </bottom>
+    <top>
+        <VBox prefHeight="10.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <children>
+                <MenuBar id="menubar" stylesheets="@style.css">
+                    <menus>
+                        <Menu id="file" mnemonicParsing="false" text="File">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#onNewClicked" text="New...                    Ctrl+N" />
+                                <SeparatorMenuItem mnemonicParsing="false" />
+                                <MenuItem mnemonicParsing="false" onAction="#onOpenClicked" text="Open...                    Ctrl+O" />
+                                <SeparatorMenuItem mnemonicParsing="false" />
+                                <MenuItem mnemonicParsing="false" onAction="#onSaveClicked" text="Save...                    Ctrl+S" />
+                                <SeparatorMenuItem mnemonicParsing="false" />
+                                <MenuItem mnemonicParsing="false" onAction="#onCloseClicked" text="Close..." />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Edit">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#onCutClicked" text="Cut                       Ctrl+X" />
+                                <MenuItem mnemonicParsing="false" onAction="#onCopyClicked" text="Copy                    Ctrl+C" />
+                                <MenuItem mnemonicParsing="false" onAction="#onPasteClicked" text="Paste                    Ctrl+V" />
+                                <SeparatorMenuItem mnemonicParsing="false" />
+                                <MenuItem mnemonicParsing="false" onAction="#onDeleteClicked" text="Delete" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Search">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#onFindClicked" text="Find" />
+                                <MenuItem mnemonicParsing="false" onAction="#onReplaceClicked" text="Replace" />
+                            </items>
+                        </Menu>
+                        <Menu fx:id="windowMenu" mnemonicParsing="false" text="Window" />
+                        <Menu mnemonicParsing="false" text="Help">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="About" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+                <ButtonBar buttonMinWidth="50.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="800.0">
+                    <buttons>
+                        <Button id="round-red" fx:id="switchBtn" mnemonicParsing="false" onAction="#onSwitchClicked" styleClass="button-bar-button" stylesheets="@style.css" text="Switch Tabs" translateX="-22.0" />
+                        <ImageView id="runbutton" fx:id="runBtn" fitHeight="25.0" fitWidth="26.0" onMouseClicked="#onRunClicked" translateX="-22.0">
+                            <image>
+                                <Image url="@play-button.png" />
+                            </image>
+                        </ImageView>
+                    </buttons>
+                    <VBox.margin>
+                        <Insets bottom="1.0" top="5.0" />
+                    </VBox.margin>
+                    <padding>
+                        <Insets bottom="5.0" />
+                    </padding>
+                </ButtonBar>
+            </children>
+        </VBox>
+    </top>
+    <center>
+        <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <TabPane fx:id="tabPane" nodeOrientation="LEFT_TO_RIGHT" prefHeight="365.0" prefWidth="640.0" tabClosingPolicy="ALL_TABS" tabMinWidth="100.0">
+
+
+                </TabPane>
+                <ListView fx:id="listView" prefHeight="200.0" prefWidth="200.0" />
+            </children>
+        </StackPane>
+    </center>
+</BorderPane>

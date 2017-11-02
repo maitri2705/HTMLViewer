@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="webviewer.SuggestionBoxFinal">
+   <children>
+      <TextArea fx:id="textArea" prefHeight="200.0" prefWidth="200.0" />
+      <ListView fx:id="listView" maxHeight="250.0" maxWidth="250.0" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</StackPane>

@@ -1,0 +1,147 @@
+MenuBar{
+  -fx-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -fx-font-size: 16px;
+  -fx-background-color: #6f6f6f;/*#323232;*/
+  -fx-border-width: 0 0 2px 0;
+  -fx-border-color: rgba(0,0,0,0.1);
+  -fx-border-style: solid;
+}
+/*
+Menu label{
+    -fx-text-fill:white;
+}*/
+
+/*.menu:hover {
+    -fx-background-color: #bc784e;
+}*/
+
+.menu .label{
+    -fx-text-fill:white;
+}
+
+
+.menu-item .label{
+    -fx-text-fill:black;
+}
+
+.menu .menu-item:focused .label{
+    -fx-text-fill:white;
+}
+
+
+.button-bar{
+      -fx-border-width: 0 0 2px 0;
+      -fx-border-color: rgba(0,0,0,0.1);
+      -fx-border-style: solid;
+}
+
+
+/*
+.menu-item .label:hover{
+    -fx-text-fill:black;
+}
+
+.menu-item:selected .label{
+    -fx-text-fill:black;
+}
+
+.menu-bar:selected .label{
+    -fx-text-fill:black;
+}
+*/
+
+
+Button  .label{
+    -fx-text-fill:red;
+}
+
+#file{
+    -fx-text-fill: white;
+    -fx-text-inner-color: #ffffff;
+}
+
+#round-red {
+    -fx-background-color: #0096c9/*linear-gradient(#ff5400, #be1d00)*/;
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+    -fx-padding: 8 10 8 10;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/*
+TabPane{
+-fx-color: #3e50b4;
+-fx-open-tab-animation:grow;
+}
+
+Tabpane .label{
+-fx-color: #3e50b4;
+}*/
+
+
+TextArea{
+/*-fx-text-inner-color: red;*/
+/*-fx-highlight-fill:yellow;*/
+-fx-font-size: 18px;
+}
+
+
+BorderPane{
+-fx-background-color:#6f6f6f;
+}
+
+#runbutton{
+-fx-padding: 50;
+}
+
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab-pane
+{
+    -fx-tab-min-width:90px;
+    -fx-open-tab-animation:grow;
+}
+
+.tab{
+    -fx-background-insets: 0 1 0 1,0,0;
+
+}
+.tab-pane .tab
+{
+    -fx-background-color: #e6e6e6;
+    -fx-text-fill:#3e50b4;
+
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color: white/*#3e50b4*/;
+}
+
+.tab-pane .tab:selected .tab-label{
+    -fx-alignment: CENTER;
+    -fx-text-fill: #3e50b4/*white*//*#828282*/;
+    -fx-font-size: 14px;
+}
+
+
+
+.tab .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill:  #3e50b4/*#828282*/;
+    -fx-font-size: 14px;
+    /*-fx-font-weight: bold;*/
+}
+
+.tab:selected .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: #3e50b4;
+}
+
+

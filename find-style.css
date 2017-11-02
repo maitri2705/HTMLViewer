@@ -1,0 +1,199 @@
+#find-next{
+    -fx-background-color: #0096c9/*linear-gradient(#ff5400, #be1d00)*/;
+    -fx-background-radius: 10;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+    -fx-padding: 8 10 8 10;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+#find-all{
+     -fx-background-color: #0096c9/*linear-gradient(#ff5400, #be1d00)*/;
+     -fx-background-radius: 10;
+     -fx-background-insets: 0;
+     -fx-text-fill: white;
+     -fx-padding: 8 10 8 10;
+     -fx-font-family: "Helvetica";
+     -fx-font-size: 12px;
+     -fx-font-weight: bold;
+ }
+
+
+ #count{
+     -fx-background-color: #0096c9/*linear-gradient(#ff5400, #be1d00)*/;
+     -fx-background-radius: 10;
+     -fx-background-insets: 0;
+     -fx-text-fill: white;
+     -fx-padding: 8 10 8 10;
+     -fx-font-family: "Helvetica";
+     -fx-font-size: 12px;
+     -fx-font-weight: bold;
+ }
+
+
+ #close{
+     -fx-background-color: #0096c9/*linear-gradient(#ff5400, #be1d00)*/;
+     -fx-background-radius: 10;
+     -fx-background-insets: 0;
+     -fx-text-fill: white;
+     -fx-padding: 8 10 8 10;
+     -fx-font-family: "Helvetica";
+     -fx-font-size: 12px;
+     -fx-font-weight: bold;
+ }
+
+#replace{
+     -fx-background-color: #0096c9/*linear-gradient(#ff5400, #be1d00)*/;
+     -fx-background-radius: 10;
+     -fx-background-insets: 0;
+     -fx-text-fill: white;
+     -fx-padding: 8 10 8 10;
+     -fx-font-family: "Helvetica";
+     -fx-font-size: 12px;
+     -fx-font-weight: bold;
+}
+
+#replace-all{
+     -fx-background-color: #0096c9/*linear-gradient(#ff5400, #be1d00)*/;
+     -fx-background-radius: 10;
+     -fx-background-insets: 0;
+     -fx-text-fill: white;
+     -fx-padding: 8 10 8 10;
+     -fx-font-family: "Helvetica";
+     -fx-font-size: 12px;
+     -fx-font-weight: bold;
+}
+
+
+#label-in-find{
+-fx-font-size: 16px;
+-fx-font-family: "Helvetica";
+-fx-text-fill: white;
+}
+
+#checkbox-style{
+-fx-font-size: 14px;
+-fx-font-family: "Helvetica";
+-fx-text-fill: white;
+}
+
+.radio-style{
+-fx-font-size: 14px;
+-fx-font-family: "Helvetica";
+-fx-text-fill: white;
+}
+
+.radio-style .radio:selected{
+-fx-background-color:#0096c9;
+-fx-text-fill:#0096c9;
+
+}
+
+#checkbox-style:selected .mark {
+    -fx-background-color:white ;
+        /*-fx-mark-highlight-color:yellow;*/
+       /* -fx-mark-color:white;*/
+}
+
+#checkbox-style *.box {
+  -fx-background-color:#0096c9;
+}
+
+.radio-style .radio {
+    -fx-border-width: 1px;
+    -fx-border-color: #0096c9;
+    -fx-background-color: white;
+    -fx-background-image: null;
+    -fx-border-radius: 15px;
+    -fx-padding: 4px;
+}
+.radio-style .radio:selected {
+    -fx-background-color:#0096c9;
+    -fx-background-image: null;
+}
+.radio-style .radio:armed {
+    -fx-background-color: #0096c9;
+    -fx-background-image: null;
+}
+.radio-style .radio:determinate {
+    -fx-background-color: #0096c9;
+    -fx-background-image: null;
+}
+.radio-style .radio:indeterminate {
+    -fx-background-color: #0096c9;
+    -fx-background-image: null;
+}
+.radio-style .dot {
+    -fx-background-radius: 10px;
+    -fx-padding: 4px;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+
+}
+
+/*.tab-pane
+{
+    -fx-tab-min-width:90px;
+    -fx-open-tab-animation:grow;
+}*/
+
+.tab{
+    -fx-background-insets: 0 1 0 1,0,0;
+}
+.tab-pane .tab
+{
+    -fx-background-color: white;
+    -fx-text-fill:#3e50b4;
+}
+
+.tab-header-area{
+       -fx-background-color: #ffffff;
+}
+
+/*.tab-pane{
+-fx-background-color: black;
+}*/
+
+.tab-pane .tab:selected
+{
+    -fx-background-color: #0096c9/*#3e50b4*/;
+}
+
+.tab-pane .tab:selected .tab-label{
+    -fx-alignment: CENTER;
+    -fx-text-fill: white/*#3e50b4*//*white*//*#828282*/;
+    -fx-font-size: 14px;
+}
+
+.tab .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill:  #0096c9/*#828282*/;
+    -fx-font-size: 14px;
+    /*-fx-font-weight: bold;*/
+}
+
+.tab:selected .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: #3e50b4;
+}
+
+
+.anchor-pane{
+-fx-background-color: #6f6f6f;
+}
+
+
+.save-text{
+-fx-text-fill:white;
+     -fx-font-family: "Helvetica";
+     -fx-font-size: 16px;
+     -fx-font-weight: 300;
+}
+
+.save-background{
+-fx-background-color:#6f6f6f;
+}
